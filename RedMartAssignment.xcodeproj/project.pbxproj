@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034BC26B20F3CB8B00D19434 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BC26A20F3CB8B00D19434 /* AppDelegate.swift */; };
+		034BC27020F3CB8B00D19434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034BC26E20F3CB8B00D19434 /* Main.storyboard */; };
+		034BC27220F3CB8C00D19434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034BC27120F3CB8C00D19434 /* Assets.xcassets */; };
+		034BC27520F3CB8C00D19434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034BC27320F3CB8C00D19434 /* LaunchScreen.storyboard */; };
+		034BC28720F3CBD300D19434 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BC28520F3CBD300D19434 /* Constants.swift */; };
+		034BC28820F3CBD300D19434 /* NetworkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BC28620F3CBD300D19434 /* NetworkWrapper.swift */; };
+		034BC29620F3D54500D19434 /* ListingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BC29520F3D54500D19434 /* ListingAPI.swift */; };
+		0364C82D20F7D28F0051AC65 /* ProductDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364C82C20F7D28F0051AC65 /* ProductDetailsController.swift */; };
+		0364C82F20F7D2B20051AC65 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364C82E20F7D2B20051AC65 /* ProductDetailsViewModel.swift */; };
+		0364C83320F7D68C0051AC65 /* ProductImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364C83120F7D68C0051AC65 /* ProductImageCell.swift */; };
+		0364C83420F7D68C0051AC65 /* ProductImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0364C83220F7D68C0051AC65 /* ProductImageCell.xib */; };
+		0364C83720F7D8630051AC65 /* ProductPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364C83520F7D8630051AC65 /* ProductPriceCell.swift */; };
+		0364C83820F7D8630051AC65 /* ProductPriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0364C83620F7D8630051AC65 /* ProductPriceCell.xib */; };
+		0364C83B20F7DA8D0051AC65 /* ProductCTACell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364C83920F7DA8D0051AC65 /* ProductCTACell.swift */; };
+		0364C83C20F7DA8D0051AC65 /* ProductCTACell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0364C83A20F7DA8D0051AC65 /* ProductCTACell.xib */; };
+		0364C83F20F7DB6B0051AC65 /* ProductDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0364C83D20F7DB6B0051AC65 /* ProductDescriptionCell.swift */; };
+		0364C84020F7DB6B0051AC65 /* ProductDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0364C83E20F7DB6B0051AC65 /* ProductDescriptionCell.xib */; };
+		0374417520F523CF00BED84D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374417420F523CF00BED84D /* HomeViewModel.swift */; };
+		0374417820F53ECE00BED84D /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374417620F53ECE00BED84D /* ProductViewCell.swift */; };
+		0374417920F53ECE00BED84D /* ProductViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0374417720F53ECE00BED84D /* ProductViewCell.xib */; };
+		039621E420F94B2C0048F01B /* ImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039621E220F94B2C0048F01B /* ImageViewCell.swift */; };
+		039621E520F94B2C0048F01B /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039621E320F94B2C0048F01B /* ImageViewCell.xib */; };
+		039621EF20FA40CB0048F01B /* RedMartAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039621EE20FA40CB0048F01B /* RedMartAssignmentTests.swift */; };
+		03EF5BF520F3E9E000EE94F7 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BD620F3E9DE00EE94F7 /* Attribute.swift */; };
+		03EF5BF620F3E9E000EE94F7 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BD720F3E9DE00EE94F7 /* Filter.swift */; };
+		03EF5BF720F3E9E000EE94F7 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BD820F3E9DE00EE94F7 /* Promo.swift */; };
+		03EF5BF820F3E9E000EE94F7 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BD920F3E9DE00EE94F7 /* Logo.swift */; };
+		03EF5BF920F3E9E000EE94F7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BDA20F3E9DE00EE94F7 /* Store.swift */; };
+		03EF5BFA20F3E9E000EE94F7 /* AtpLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BDB20F3E9DE00EE94F7 /* AtpLot.swift */; };
+		03EF5BFB20F3E9E000EE94F7 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BDC20F3E9DE00EE94F7 /* Meta.swift */; };
+		03EF5BFC20F3E9E000EE94F7 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BDD20F3E9DE00EE94F7 /* Detail.swift */; };
+		03EF5BFD20F3E9E000EE94F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BDE20F3E9DE00EE94F7 /* Image.swift */; };
+		03EF5BFE20F3E9E000EE94F7 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BDF20F3E9DE00EE94F7 /* Icon.swift */; };
+		03EF5BFF20F3E9E000EE94F7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE020F3E9DE00EE94F7 /* Category.swift */; };
+		03EF5C0020F3E9E000EE94F7 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE120F3E9DE00EE94F7 /* Measure.swift */; };
+		03EF5C0120F3E9E000EE94F7 /* MediaAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE220F3E9DE00EE94F7 /* MediaAsset.swift */; };
+		03EF5C0220F3E9E000EE94F7 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE320F3E9DE00EE94F7 /* Merchant.swift */; };
+		03EF5C0320F3E9E000EE94F7 /* ProductLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE420F3E9DE00EE94F7 /* ProductLife.swift */; };
+		03EF5C0420F3E9E000EE94F7 /* Primary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE520F3E9DE00EE94F7 /* Primary.swift */; };
+		03EF5C0520F3E9E000EE94F7 /* DescriptionField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE620F3E9DF00EE94F7 /* DescriptionField.swift */; };
+		03EF5C0620F3E9E000EE94F7 /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE720F3E9DF00EE94F7 /* Promotion.swift */; };
+		03EF5C0720F3E9E000EE94F7 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE820F3E9DF00EE94F7 /* Option.swift */; };
+		03EF5C0820F3E9E000EE94F7 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BE920F3E9DF00EE94F7 /* Type.swift */; };
+		03EF5C0920F3E9E000EE94F7 /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BEA20F3E9DF00EE94F7 /* Toggle.swift */; };
+		03EF5C0A20F3E9E000EE94F7 /* ListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BEB20F3E9DF00EE94F7 /* ListingData.swift */; };
+		03EF5C0B20F3E9E000EE94F7 /* SubVendorLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BEC20F3E9DF00EE94F7 /* SubVendorLogo.swift */; };
+		03EF5C0C20F3E9E000EE94F7 /* Facet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BED20F3E9DF00EE94F7 /* Facet.swift */; };
+		03EF5C0D20F3E9E000EE94F7 /* Statu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BEE20F3E9DF00EE94F7 /* Statu.swift */; };
+		03EF5C0E20F3E9E000EE94F7 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BEF20F3E9DF00EE94F7 /* Inventory.swift */; };
+		03EF5C0F20F3E9E000EE94F7 /* Img.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BF020F3E9E000EE94F7 /* Img.swift */; };
+		03EF5C1020F3E9E000EE94F7 /* Warehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BF120F3E9E000EE94F7 /* Warehouse.swift */; };
+		03EF5C1120F3E9E000EE94F7 /* Pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BF220F3E9E000EE94F7 /* Pricing.swift */; };
+		03EF5C1220F3E9E000EE94F7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BF320F3E9E000EE94F7 /* Product.swift */; };
+		03EF5C1320F3E9E000EE94F7 /* Discount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5BF420F3E9E000EE94F7 /* Discount.swift */; };
+		03EF5C1A20F3ECC600EE94F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5C1920F3ECC600EE94F7 /* HomeViewController.swift */; };
+		03EF5C1D20F3F32F00EE94F7 /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EF5C1B20F3F32F00EE94F7 /* CategoryViewCell.swift */; };
+		03EF5C1E20F3F32F00EE94F7 /* CategoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03EF5C1C20F3F32F00EE94F7 /* CategoryViewCell.xib */; };
+		1B48E26167A650412F775A1A /* Pods_RedMartAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D39D19FC55B46E240E2299 /* Pods_RedMartAssignmentTests.framework */; };
+		98FC59FD01A57B7E708CEE32 /* Pods_RedMartAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF20C301BC51FBCFECEEE957 /* Pods_RedMartAssignment.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		039621F120FA40CB0048F01B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 034BC25F20F3CB8B00D19434 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 034BC26620F3CB8B00D19434;
+			remoteInfo = RedMartAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		034BC26720F3CB8B00D19434 /* RedMartAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedMartAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		034BC26A20F3CB8B00D19434 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		034BC26F20F3CB8B00D19434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		034BC27120F3CB8C00D19434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		034BC27420F3CB8C00D19434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		034BC27620F3CB8C00D19434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034BC28520F3CBD300D19434 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		034BC28620F3CBD300D19434 /* NetworkWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkWrapper.swift; sourceTree = "<group>"; };
+		034BC29520F3D54500D19434 /* ListingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListingAPI.swift; path = RedMartAssignment/ViewController/ListingAPI.swift; sourceTree = SOURCE_ROOT; };
+		0364C82C20F7D28F0051AC65 /* ProductDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsController.swift; sourceTree = "<group>"; };
+		0364C82E20F7D2B20051AC65 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
+		0364C83120F7D68C0051AC65 /* ProductImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageCell.swift; sourceTree = "<group>"; };
+		0364C83220F7D68C0051AC65 /* ProductImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductImageCell.xib; sourceTree = "<group>"; };
+		0364C83520F7D8630051AC65 /* ProductPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPriceCell.swift; sourceTree = "<group>"; };
+		0364C83620F7D8630051AC65 /* ProductPriceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductPriceCell.xib; sourceTree = "<group>"; };
+		0364C83920F7DA8D0051AC65 /* ProductCTACell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCTACell.swift; sourceTree = "<group>"; };
+		0364C83A20F7DA8D0051AC65 /* ProductCTACell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCTACell.xib; sourceTree = "<group>"; };
+		0364C83D20F7DB6B0051AC65 /* ProductDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescriptionCell.swift; sourceTree = "<group>"; };
+		0364C83E20F7DB6B0051AC65 /* ProductDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDescriptionCell.xib; sourceTree = "<group>"; };
+		0374417420F523CF00BED84D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0374417620F53ECE00BED84D /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
+		0374417720F53ECE00BED84D /* ProductViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductViewCell.xib; sourceTree = "<group>"; };
+		039621E220F94B2C0048F01B /* ImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCell.swift; sourceTree = "<group>"; };
+		039621E320F94B2C0048F01B /* ImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
+		039621EC20FA40CB0048F01B /* RedMartAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedMartAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		039621EE20FA40CB0048F01B /* RedMartAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedMartAssignmentTests.swift; sourceTree = "<group>"; };
+		039621F020FA40CB0048F01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03EF5BD620F3E9DE00EE94F7 /* Attribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		03EF5BD720F3E9DE00EE94F7 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		03EF5BD820F3E9DE00EE94F7 /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		03EF5BD920F3E9DE00EE94F7 /* Logo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		03EF5BDA20F3E9DE00EE94F7 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		03EF5BDB20F3E9DE00EE94F7 /* AtpLot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtpLot.swift; sourceTree = "<group>"; };
+		03EF5BDC20F3E9DE00EE94F7 /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		03EF5BDD20F3E9DE00EE94F7 /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		03EF5BDE20F3E9DE00EE94F7 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		03EF5BDF20F3E9DE00EE94F7 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		03EF5BE020F3E9DE00EE94F7 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		03EF5BE120F3E9DE00EE94F7 /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		03EF5BE220F3E9DE00EE94F7 /* MediaAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaAsset.swift; sourceTree = "<group>"; };
+		03EF5BE320F3E9DE00EE94F7 /* Merchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
+		03EF5BE420F3E9DE00EE94F7 /* ProductLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductLife.swift; sourceTree = "<group>"; };
+		03EF5BE520F3E9DE00EE94F7 /* Primary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Primary.swift; sourceTree = "<group>"; };
+		03EF5BE620F3E9DF00EE94F7 /* DescriptionField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionField.swift; sourceTree = "<group>"; };
+		03EF5BE720F3E9DF00EE94F7 /* Promotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		03EF5BE820F3E9DF00EE94F7 /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		03EF5BE920F3E9DF00EE94F7 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		03EF5BEA20F3E9DF00EE94F7 /* Toggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
+		03EF5BEB20F3E9DF00EE94F7 /* ListingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingData.swift; sourceTree = "<group>"; };
+		03EF5BEC20F3E9DF00EE94F7 /* SubVendorLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubVendorLogo.swift; sourceTree = "<group>"; };
+		03EF5BED20F3E9DF00EE94F7 /* Facet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facet.swift; sourceTree = "<group>"; };
+		03EF5BEE20F3E9DF00EE94F7 /* Statu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statu.swift; sourceTree = "<group>"; };
+		03EF5BEF20F3E9DF00EE94F7 /* Inventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		03EF5BF020F3E9E000EE94F7 /* Img.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Img.swift; sourceTree = "<group>"; };
+		03EF5BF120F3E9E000EE94F7 /* Warehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warehouse.swift; sourceTree = "<group>"; };
+		03EF5BF220F3E9E000EE94F7 /* Pricing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pricing.swift; sourceTree = "<group>"; };
+		03EF5BF320F3E9E000EE94F7 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		03EF5BF420F3E9E000EE94F7 /* Discount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discount.swift; sourceTree = "<group>"; };
+		03EF5C1920F3ECC600EE94F7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		03EF5C1B20F3F32F00EE94F7 /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
+		03EF5C1C20F3F32F00EE94F7 /* CategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewCell.xib; sourceTree = "<group>"; };
+		18D39D19FC55B46E240E2299 /* Pods_RedMartAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedMartAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B0968D71E76511AA65F273F /* Pods-RedMartAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedMartAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedMartAssignmentTests/Pods-RedMartAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		45582090282936B5218E55A4 /* Pods-RedMartAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedMartAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedMartAssignment/Pods-RedMartAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		AF41FF099AE0005F5F106FF0 /* Pods-RedMartAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedMartAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedMartAssignmentTests/Pods-RedMartAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		CF20C301BC51FBCFECEEE957 /* Pods_RedMartAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedMartAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E6CDA4F1EC4988917468F5 /* Pods-RedMartAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedMartAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedMartAssignment/Pods-RedMartAssignment.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		034BC26420F3CB8B00D19434 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FC59FD01A57B7E708CEE32 /* Pods_RedMartAssignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039621E920FA40CB0048F01B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B48E26167A650412F775A1A /* Pods_RedMartAssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034BC25E20F3CB8B00D19434 = {
+			isa = PBXGroup;
+			children = (
+				034BC26920F3CB8B00D19434 /* RedMartAssignment */,
+				039621ED20FA40CB0048F01B /* RedMartAssignmentTests */,
+				034BC26820F3CB8B00D19434 /* Products */,
+				390038F75EC0163F217B299A /* Pods */,
+				3CE9C54360897766F40C995F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		034BC26820F3CB8B00D19434 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				034BC26720F3CB8B00D19434 /* RedMartAssignment.app */,
+				039621EC20FA40CB0048F01B /* RedMartAssignmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		034BC26920F3CB8B00D19434 /* RedMartAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				03EF5B9720F3E79500EE94F7 /* Models */,
+				034BC29420F3D51B00D19434 /* API */,
+				034BC28E20F3D3CB00D19434 /* ViewModels */,
+				034BC28B20F3D3A500D19434 /* ViewController */,
+				034BC28A20F3D09F00D19434 /* Views */,
+				034BC27C20F3CBB100D19434 /* Helpers */,
+				034BC26A20F3CB8B00D19434 /* AppDelegate.swift */,
+				034BC27120F3CB8C00D19434 /* Assets.xcassets */,
+				034BC27620F3CB8C00D19434 /* Info.plist */,
+			);
+			path = RedMartAssignment;
+			sourceTree = "<group>";
+		};
+		034BC27C20F3CBB100D19434 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				034BC28520F3CBD300D19434 /* Constants.swift */,
+				034BC28620F3CBD300D19434 /* NetworkWrapper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		034BC28A20F3D09F00D19434 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0364C83020F7D2C20051AC65 /* TableCell */,
+				03EF5C1420F3EBB500EE94F7 /* CollectionCell */,
+				034BC27320F3CB8C00D19434 /* LaunchScreen.storyboard */,
+				034BC26E20F3CB8B00D19434 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		034BC28B20F3D3A500D19434 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03EF5C1920F3ECC600EE94F7 /* HomeViewController.swift */,
+				0364C82C20F7D28F0051AC65 /* ProductDetailsController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		034BC28E20F3D3CB00D19434 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0374417420F523CF00BED84D /* HomeViewModel.swift */,
+				0364C82E20F7D2B20051AC65 /* ProductDetailsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		034BC29420F3D51B00D19434 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				034BC29520F3D54500D19434 /* ListingAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0364C83020F7D2C20051AC65 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				0364C83120F7D68C0051AC65 /* ProductImageCell.swift */,
+				0364C83220F7D68C0051AC65 /* ProductImageCell.xib */,
+				0364C83520F7D8630051AC65 /* ProductPriceCell.swift */,
+				0364C83620F7D8630051AC65 /* ProductPriceCell.xib */,
+				0364C83920F7DA8D0051AC65 /* ProductCTACell.swift */,
+				0364C83A20F7DA8D0051AC65 /* ProductCTACell.xib */,
+				0364C83D20F7DB6B0051AC65 /* ProductDescriptionCell.swift */,
+				0364C83E20F7DB6B0051AC65 /* ProductDescriptionCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		039621ED20FA40CB0048F01B /* RedMartAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				039621EE20FA40CB0048F01B /* RedMartAssignmentTests.swift */,
+				039621F020FA40CB0048F01B /* Info.plist */,
+			);
+			path = RedMartAssignmentTests;
+			sourceTree = "<group>";
+		};
+		03EF5B9720F3E79500EE94F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03EF5BDB20F3E9DE00EE94F7 /* AtpLot.swift */,
+				03EF5BD620F3E9DE00EE94F7 /* Attribute.swift */,
+				03EF5BE020F3E9DE00EE94F7 /* Category.swift */,
+				03EF5BE620F3E9DF00EE94F7 /* DescriptionField.swift */,
+				03EF5BDD20F3E9DE00EE94F7 /* Detail.swift */,
+				03EF5BF420F3E9E000EE94F7 /* Discount.swift */,
+				03EF5BED20F3E9DF00EE94F7 /* Facet.swift */,
+				03EF5BD720F3E9DE00EE94F7 /* Filter.swift */,
+				03EF5BDF20F3E9DE00EE94F7 /* Icon.swift */,
+				03EF5BDE20F3E9DE00EE94F7 /* Image.swift */,
+				03EF5BF020F3E9E000EE94F7 /* Img.swift */,
+				03EF5BEF20F3E9DF00EE94F7 /* Inventory.swift */,
+				03EF5BEB20F3E9DF00EE94F7 /* ListingData.swift */,
+				03EF5BD920F3E9DE00EE94F7 /* Logo.swift */,
+				03EF5BE120F3E9DE00EE94F7 /* Measure.swift */,
+				03EF5BE220F3E9DE00EE94F7 /* MediaAsset.swift */,
+				03EF5BE320F3E9DE00EE94F7 /* Merchant.swift */,
+				03EF5BDC20F3E9DE00EE94F7 /* Meta.swift */,
+				03EF5BE820F3E9DF00EE94F7 /* Option.swift */,
+				03EF5BF220F3E9E000EE94F7 /* Pricing.swift */,
+				03EF5BE520F3E9DE00EE94F7 /* Primary.swift */,
+				03EF5BF320F3E9E000EE94F7 /* Product.swift */,
+				03EF5BE420F3E9DE00EE94F7 /* ProductLife.swift */,
+				03EF5BD820F3E9DE00EE94F7 /* Promo.swift */,
+				03EF5BE720F3E9DF00EE94F7 /* Promotion.swift */,
+				03EF5BEE20F3E9DF00EE94F7 /* Statu.swift */,
+				03EF5BDA20F3E9DE00EE94F7 /* Store.swift */,
+				03EF5BEC20F3E9DF00EE94F7 /* SubVendorLogo.swift */,
+				03EF5BEA20F3E9DF00EE94F7 /* Toggle.swift */,
+				03EF5BE920F3E9DF00EE94F7 /* Type.swift */,
+				03EF5BF120F3E9E000EE94F7 /* Warehouse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03EF5C1420F3EBB500EE94F7 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				03EF5C1B20F3F32F00EE94F7 /* CategoryViewCell.swift */,
+				03EF5C1C20F3F32F00EE94F7 /* CategoryViewCell.xib */,
+				0374417620F53ECE00BED84D /* ProductViewCell.swift */,
+				0374417720F53ECE00BED84D /* ProductViewCell.xib */,
+				039621E220F94B2C0048F01B /* ImageViewCell.swift */,
+				039621E320F94B2C0048F01B /* ImageViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		390038F75EC0163F217B299A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45582090282936B5218E55A4 /* Pods-RedMartAssignment.debug.xcconfig */,
+				D0E6CDA4F1EC4988917468F5 /* Pods-RedMartAssignment.release.xcconfig */,
+				2B0968D71E76511AA65F273F /* Pods-RedMartAssignmentTests.debug.xcconfig */,
+				AF41FF099AE0005F5F106FF0 /* Pods-RedMartAssignmentTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3CE9C54360897766F40C995F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF20C301BC51FBCFECEEE957 /* Pods_RedMartAssignment.framework */,
+				18D39D19FC55B46E240E2299 /* Pods_RedMartAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		034BC26620F3CB8B00D19434 /* RedMartAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034BC27920F3CB8C00D19434 /* Build configuration list for PBXNativeTarget "RedMartAssignment" */;
+			buildPhases = (
+				034BC26320F3CB8B00D19434 /* Sources */,
+				034BC26420F3CB8B00D19434 /* Frameworks */,
+				034BC26520F3CB8B00D19434 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedMartAssignment;
+			productName = RedMartAssignment;
+			productReference = 034BC26720F3CB8B00D19434 /* RedMartAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		039621EB20FA40CB0048F01B /* RedMartAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039621F320FA40CB0048F01B /* Build configuration list for PBXNativeTarget "RedMartAssignmentTests" */;
+			buildPhases = (
+				99E5E45B23E1A6C85C1340E6 /* [CP] Check Pods Manifest.lock */,
+				039621E820FA40CB0048F01B /* Sources */,
+				039621E920FA40CB0048F01B /* Frameworks */,
+				039621EA20FA40CB0048F01B /* Resources */,
+				B9ED3C84E4C9BA99ADD8A846 /* [CP] Embed Pods Frameworks */,
+				C14E86697296BB5D0BC587B2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				039621F220FA40CB0048F01B /* PBXTargetDependency */,
+			);
+			name = RedMartAssignmentTests;
+			productName = RedMartAssignmentTests;
+			productReference = 039621EC20FA40CB0048F01B /* RedMartAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		034BC25F20F3CB8B00D19434 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Ankit.Gohel;
+				TargetAttributes = {
+					034BC26620F3CB8B00D19434 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					039621EB20FA40CB0048F01B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 034BC26620F3CB8B00D19434;
+					};
+				};
+			};
+			buildConfigurationList = 034BC26220F3CB8B00D19434 /* Build configuration list for PBXProject "RedMartAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 034BC25E20F3CB8B00D19434;
+			productRefGroup = 034BC26820F3CB8B00D19434 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				034BC26620F3CB8B00D19434 /* RedMartAssignment */,
+				039621EB20FA40CB0048F01B /* RedMartAssignmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		034BC26520F3CB8B00D19434 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0374417920F53ECE00BED84D /* ProductViewCell.xib in Resources */,
+				034BC27520F3CB8C00D19434 /* LaunchScreen.storyboard in Resources */,
+				0364C83820F7D8630051AC65 /* ProductPriceCell.xib in Resources */,
+				03EF5C1E20F3F32F00EE94F7 /* CategoryViewCell.xib in Resources */,
+				0364C83C20F7DA8D0051AC65 /* ProductCTACell.xib in Resources */,
+				0364C84020F7DB6B0051AC65 /* ProductDescriptionCell.xib in Resources */,
+				039621E520F94B2C0048F01B /* ImageViewCell.xib in Resources */,
+				034BC27220F3CB8C00D19434 /* Assets.xcassets in Resources */,
+				034BC27020F3CB8B00D19434 /* Main.storyboard in Resources */,
+				0364C83420F7D68C0051AC65 /* ProductImageCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039621EA20FA40CB0048F01B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99E5E45B23E1A6C85C1340E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RedMartAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9ED3C84E4C9BA99ADD8A846 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedMartAssignmentTests/Pods-RedMartAssignmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C14E86697296BB5D0BC587B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedMartAssignmentTests/Pods-RedMartAssignmentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		034BC26320F3CB8B00D19434 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EF5BF720F3E9E000EE94F7 /* Promo.swift in Sources */,
+				03EF5C1120F3E9E000EE94F7 /* Pricing.swift in Sources */,
+				0374417820F53ECE00BED84D /* ProductViewCell.swift in Sources */,
+				034BC26B20F3CB8B00D19434 /* AppDelegate.swift in Sources */,
+				0364C83B20F7DA8D0051AC65 /* ProductCTACell.swift in Sources */,
+				0374417520F523CF00BED84D /* HomeViewModel.swift in Sources */,
+				03EF5C0720F3E9E000EE94F7 /* Option.swift in Sources */,
+				03EF5C1320F3E9E000EE94F7 /* Discount.swift in Sources */,
+				03EF5C0320F3E9E000EE94F7 /* ProductLife.swift in Sources */,
+				03EF5C0D20F3E9E000EE94F7 /* Statu.swift in Sources */,
+				039621E420F94B2C0048F01B /* ImageViewCell.swift in Sources */,
+				03EF5C0020F3E9E000EE94F7 /* Measure.swift in Sources */,
+				0364C83F20F7DB6B0051AC65 /* ProductDescriptionCell.swift in Sources */,
+				03EF5C1D20F3F32F00EE94F7 /* CategoryViewCell.swift in Sources */,
+				034BC28820F3CBD300D19434 /* NetworkWrapper.swift in Sources */,
+				034BC28720F3CBD300D19434 /* Constants.swift in Sources */,
+				03EF5C1A20F3ECC600EE94F7 /* HomeViewController.swift in Sources */,
+				03EF5C0820F3E9E000EE94F7 /* Type.swift in Sources */,
+				03EF5BFD20F3E9E000EE94F7 /* Image.swift in Sources */,
+				03EF5C0B20F3E9E000EE94F7 /* SubVendorLogo.swift in Sources */,
+				03EF5BF520F3E9E000EE94F7 /* Attribute.swift in Sources */,
+				03EF5C1020F3E9E000EE94F7 /* Warehouse.swift in Sources */,
+				03EF5BF920F3E9E000EE94F7 /* Store.swift in Sources */,
+				03EF5C0A20F3E9E000EE94F7 /* ListingData.swift in Sources */,
+				03EF5C0120F3E9E000EE94F7 /* MediaAsset.swift in Sources */,
+				03EF5BFA20F3E9E000EE94F7 /* AtpLot.swift in Sources */,
+				03EF5C0420F3E9E000EE94F7 /* Primary.swift in Sources */,
+				03EF5BFC20F3E9E000EE94F7 /* Detail.swift in Sources */,
+				03EF5C0520F3E9E000EE94F7 /* DescriptionField.swift in Sources */,
+				03EF5BF820F3E9E000EE94F7 /* Logo.swift in Sources */,
+				03EF5C0920F3E9E000EE94F7 /* Toggle.swift in Sources */,
+				03EF5BFF20F3E9E000EE94F7 /* Category.swift in Sources */,
+				0364C83320F7D68C0051AC65 /* ProductImageCell.swift in Sources */,
+				03EF5C0620F3E9E000EE94F7 /* Promotion.swift in Sources */,
+				03EF5C0E20F3E9E000EE94F7 /* Inventory.swift in Sources */,
+				03EF5C0C20F3E9E000EE94F7 /* Facet.swift in Sources */,
+				03EF5BF620F3E9E000EE94F7 /* Filter.swift in Sources */,
+				03EF5C1220F3E9E000EE94F7 /* Product.swift in Sources */,
+				0364C83720F7D8630051AC65 /* ProductPriceCell.swift in Sources */,
+				03EF5BFB20F3E9E000EE94F7 /* Meta.swift in Sources */,
+				03EF5BFE20F3E9E000EE94F7 /* Icon.swift in Sources */,
+				0364C82D20F7D28F0051AC65 /* ProductDetailsController.swift in Sources */,
+				03EF5C0F20F3E9E000EE94F7 /* Img.swift in Sources */,
+				0364C82F20F7D2B20051AC65 /* ProductDetailsViewModel.swift in Sources */,
+				034BC29620F3D54500D19434 /* ListingAPI.swift in Sources */,
+				03EF5C0220F3E9E000EE94F7 /* Merchant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039621E820FA40CB0048F01B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039621EF20FA40CB0048F01B /* RedMartAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		039621F220FA40CB0048F01B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 034BC26620F3CB8B00D19434 /* RedMartAssignment */;
+			targetProxy = 039621F120FA40CB0048F01B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		034BC26E20F3CB8B00D19434 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				034BC26F20F3CB8B00D19434 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		034BC27320F3CB8C00D19434 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				034BC27420F3CB8C00D19434 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		034BC27720F3CB8C00D19434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		034BC27820F3CB8C00D19434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		034BC27A20F3CB8C00D19434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45582090282936B5218E55A4 /* Pods-RedMartAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RedMartAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RM.RedMartAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		034BC27B20F3CB8C00D19434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E6CDA4F1EC4988917468F5 /* Pods-RedMartAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RedMartAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RM.RedMartAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		039621F420FA40CB0048F01B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B0968D71E76511AA65F273F /* Pods-RedMartAssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RedMartAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RM.RedMartAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedMartAssignment.app/RedMartAssignment";
+			};
+			name = Debug;
+		};
+		039621F520FA40CB0048F01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF41FF099AE0005F5F106FF0 /* Pods-RedMartAssignmentTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RedMartAssignmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RM.RedMartAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RedMartAssignment.app/RedMartAssignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		034BC26220F3CB8B00D19434 /* Build configuration list for PBXProject "RedMartAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034BC27720F3CB8C00D19434 /* Debug */,
+				034BC27820F3CB8C00D19434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034BC27920F3CB8C00D19434 /* Build configuration list for PBXNativeTarget "RedMartAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034BC27A20F3CB8C00D19434 /* Debug */,
+				034BC27B20F3CB8C00D19434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		039621F320FA40CB0048F01B /* Build configuration list for PBXNativeTarget "RedMartAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039621F420FA40CB0048F01B /* Debug */,
+				039621F520FA40CB0048F01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 034BC25F20F3CB8B00D19434 /* Project object */;
+}
